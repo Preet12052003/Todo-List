@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+.nav{
+  background-color: rgb(148, 148, 217);
+  padding: 20px;
+  box-shadow: 2px 2px 12px  #4f4e4e;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  /* bottom: 0; */
+  z-index: 99;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.head{
+  margin-right: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-check-input{
+  margin-left: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero{
+  position: absolute;
+  /* background-color: #333; */
+  width: 100%;
+  top: 72px;
+  z-index: -1;
+  bottom: 0;
+  
+}
+
+.form{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 18px;
+  gap: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.todo--input{
+  width: 100%;
+  padding: 10px;
+  text-indent: 10px;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+
+.todo--addbtn{
+  width: 200px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: rgb(56, 199, 215);
   color: white;
+  font-weight: 500;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.list{
+  margin: 0 18px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 18px 8px;
+  border-bottom: 1px solid #333;
+  background-color: rgb(236, 232, 232);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.head-2{
+  padding: 0 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
